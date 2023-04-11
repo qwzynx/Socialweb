@@ -20,16 +20,22 @@
     </header>
     <div class="center">
       <div class="ontop">
-        <button onclick="window.open('', '_blank');" class="insta center">
+        <button class="insta center" onclick="openUrl('https://instagram.com/qwzynx/')" >
           INSTAGRAM
         </button> 
-        <button onclick="window.open('https://www.instagram.com/qwzynx/', '_blank');" class="tts center">
+        <button class="tts center" onclick="openUrl('https://www.tiktok.com/@qw.zynx')" >
           TIKTOK
         </button>
-        <button onclick="window.open('', '_blank');" class="discord center">
+        <button class="discord center" onclick="openUrl('https://discord.gg/JNNeU7KE')" >
           DISCORD
         </button>
       </div>
     </div>
+
+    <script>
+      function openUrl(url) {
+        window.open(url, '_blank');
+      }
+    </script>
   </body>
 </html>
