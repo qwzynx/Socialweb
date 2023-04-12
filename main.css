@@ -3,11 +3,14 @@ body {
   color: rgb(255, 255, 255);
   }
 
-.center {
+.container {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+
 .ontop {
   display: flex;
   flex-direction: column;
@@ -17,9 +20,10 @@ body {
 
 
 
+
 .tit {
   font-family: orbitron;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
   display: flex;
@@ -29,42 +33,56 @@ body {
   margin-top: 60px;
 }
 .discord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: rgb(114, 137, 218);
-  width: 150px;
-  height: 50px;
+  width: 300px;
+  height: 70px;
   color: whitesmoke;
   font-size: 17px;
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 70px;
+  position: relative;
   cursor: pointer;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, 
+    transform .2s ease-in-out;
 }
 .discord:hover {
-  background-color: whitesmoke;
+  transform: scale(1.1);
+  background-color: rgb(220, 209, 209);
   color: rgb(114, 137, 218);
 }
 .discord:active{
   transition: background-color 0.3s, color 0.3s;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(202, 197, 197, 0.5);
   color: rgba(114, 137, 218, 0.5);
 }
 
 
 .insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: rgba(211, 0, 235, 1);
-  width: 150px;
-  height: 50px;
+  width: 300px;
+  height: 70px;
   color: whitesmoke;
   font-size: 17px;
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 70px;
   cursor: pointer;
-  margin-bottom: 7px;
-  transition: color 0.5s, background-color 0.5s;
+  position: relative;
+  margin-bottom: 8px;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out,
+    transform .2s ease-in-out;
 }
 .insta:hover {
+  transform: scale(1.1);
   background-color: whitesmoke;
   color: rgba(211, 0, 235, 1);
 }
@@ -76,9 +94,13 @@ body {
 
 
 .tts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: rgba(0, 0, 0, 1);
-  width: 150px;
-  height: 50px;
+  width: 300px;
+  height: 70px;
   color: cyan;
   font-size: 17px;
   font-weight: bold;
@@ -86,10 +108,13 @@ body {
   border-style: solid;
   border-radius: 10px;
   cursor: pointer;
-  margin-bottom: 7px;
-  transition: color 0.5s, background-color 0.5s;
+  position: relative;
+  margin-bottom: 8px;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out,
+    transform .2s ease-in-out;
 }
 .tts:hover {
+  transform: scale(1.1);
   background-color: whitesmoke;
   color: rgba(0, 0, 0, 1);
 }
@@ -97,4 +122,15 @@ body {
   transition: background-color 0.3s, color 0.3s;
   background-color: rgba(245, 245, 245, 0.4);
   color: rgba(0, 0, 0, 0.4);
+}
+
+.textA {
+  position: absolute;
+  left: 70px;
+}
+
+.icon {
+  position: absolute;
+  height: 40px;
+  right: 45px;
 }
